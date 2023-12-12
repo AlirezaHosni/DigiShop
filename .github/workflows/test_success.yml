@@ -1,0 +1,14 @@
+name: Sample Workflow
+
+on: [push]
+
+jobs:
+  run-simple-command:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run a simple command
+        run: echo "Hello, GitHub Actions!"
