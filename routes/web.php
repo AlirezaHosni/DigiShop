@@ -83,6 +83,7 @@ Route::prefix('admin')->namespace('Admin')->group(function () {
             Route::get('/edit/{productCategory}', [CategoryController::class, 'edit'])->name('admin.market.category.edit');
             Route::put('/update/{productCategory}', [CategoryController::class, 'update'])->name('admin.market.category.update');
             Route::delete('/destroy/{productCategory}', [CategoryController::class, 'destroy'])->name('admin.market.category.destroy');
+            Route::delete('/destroy/{productCategory}', [CategoryController::class, 'destroy'])->name('admin.market.category.destroy');
         });
 
         //brand
